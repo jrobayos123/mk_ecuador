@@ -428,3 +428,154 @@ footer {
     from { opacity: 0; transform: translateX(10px); }
     to { opacity: 1; transform: translateX(0); }
 }
+/* --- ESTILOS DEL NUEVO FOOTER --- */
+
+.main-footer {
+    background-color: #1a1a1a; /* Fondo oscuro */
+    color: #fff;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 10%;
+    gap: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col h3 {
+    color: var(--accent-yellow); /* Usamos tu color amarillo */
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-yellow);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-col p {
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
+
+/* Iconos específicos */
+.icon-whatsapp {
+    color: #25D366; /* Verde WhatsApp */
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.icon-location {
+    color: #e63946; /* Rojo Mapa */
+    margin-right: 8px;
+}
+
+.footer-bottom {
+    background-color: #000;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* --- ESTILOS EXCLUSIVOS PARA PROYECTOS --- */
+
+.projects-grid {
+    display: grid;
+    /* Las tarjetas serán más grandes que las de componentes */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.project-card {
+    position: relative;
+    height: 450px; /* Altura fija para que sean altas e imponentes */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Flota al pasar el mouse */
+    box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2); /* Sombra dorada */
+}
+
+/* La Imagen del Proyecto (Estilo Cover) */
+.project-img-full {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* MAGIA: La imagen llena todo el cuadro sin bordes blancos */
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img-full {
+    transform: scale(1.1); /* Zoom suave a la imagen */
+}
+
+/* El Texto sobre la imagen */
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); /* Degradado negro para leer */
+    padding: 30px 20px;
+    color: white;
+}
+
+.project-overlay h3 {
+    font-size: 1.8rem;
+    color: var(--accent-yellow);
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.project-overlay p {
+    font-size: 1rem;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+.project-btn {
+    background: var(--accent-yellow);
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.project-btn:hover {
+    background: white;
+}

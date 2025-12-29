@@ -1486,7 +1486,218 @@ const listaProductos = [
     "image": "img/7400.jpeg",
     "description": "Circuito integrado NAND de 4 entradas.",
     "active": true
+  },
+  {
+    "id": "P0136",
+    "name": "OLED",
+    "sku": "OLE-00-01",
+    "category": "Pantallas",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/olcd.jfif",
+    "description": "Pantalla para programar y visualizar projectos.",
+    "active": true
+  },
+  {
+    "id": "P0137",
+    "name": "Modulo CR2032",
+    "sku": "MOD-CR-32",
+    "category": "Modulo",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/mod_cr2032.jfif",
+    "description": "Alimentación de respaldo o de bajo consumo para mantener funciones como la hora y la configuración del sistema.",
+    "active": true
+  },
+  {
+    "id": "P0138",
+    "name": "Modulo PWM",
+    "sku": "MOD-PW-M0",
+    "category": "Modulo",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/pwm.jfif",
+    "description": "Modulo de potencia para mover motores o circuitos de alta corriente.",
+    "active": true
+  },
+  {
+    "id": "P0139",
+    "name": "KIT CARRO ",
+    "sku": "KIT-CA-00",
+    "category": "KIT",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/kit_rob.jfif",
+    "description": "Kit de carro electronico para proyectos educativos .",
+    "active": true
+  },
+  {
+    "id": "P0140",
+    "name": "ESP32 + CAMARA",
+    "sku": "ESP-00-02",
+    "category": "Microcontroladores",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/olcd.jfif",
+    "description": "Microcontrolador para procesamiento de imagenes.",
+    "active": true
+  },
+  {
+    "id": "P0141",
+    "name": "KIT MODULO ECG AD8232",
+    "sku": "KIT-MO-EC",
+    "category": "Kit",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/sen_pul.jfif",
+    "description": "Modulo para medir los pulsos del corazón.",
+    "active": true
+  },
+  {
+    "id": "P0142",
+    "name": "TDA 2003,2030,2005",
+    "sku": "TDA-00-01",
+    "category": "Amplificadores",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/tdax.jfif",
+    "description": "Toma una señal de entrada débil y aumentar su nivel de amplitud.",
+    "active": true
+  },
+  {
+    "id": "P0143",
+    "name": "KIT CARRO",
+    "sku": "KIT-CA-02",
+    "category": "Kit",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/car.jfif",
+    "description": "Kit de carro electronico para proyectos educativos.",
+    "active": true
+  },
+  {
+    "id": "P0144",
+    "name": "Puente H",
+    "sku": "PTH-00-01",
+    "category": "Modulo",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/ph.jfif",
+    "description": "Modulo para mover motores de media y baja corriente.",
+    "active": true
+  },
+  {
+    "id": "P0145",
+    "name": "Modulo MQ35",
+    "sku": "MOD-MQ-35",
+    "category": "Modulo",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/mq35.jfif",
+    "description": "Modulo para medir la cantidad de gas en el medio ambiente.",
+    "active": true
+  },
+  {
+    "id": "P0146",
+    "name": "Flash tipo pulsera",
+    "sku": "FSH-00-01",
+    "category": "Kit",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/flash.jfif",
+    "description": "Memoria tipo pulsera para llevar a cualquier lado.",
+    "active": true
+  },
+  {
+    "id": "P0147",
+    "name": "Interruptor rojo",
+    "sku": "INT-RJ-01",
+    "category": "Interruptor",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/push_red.jfif",
+    "description": "Elemento para abrir y cerrar corriente en un circuito.",
+    "active": true
+  },
+  {
+    "id": "P0148",
+    "name": "Modulo de Fotorresistencia",
+    "sku": "MOD-FR-02",
+    "category": "Modulo ",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/mod_fr.jfif",
+    "description": "Modulo para medir la cantidad de luz en un medio ambiente.",
+    "active": true
+  },
+  {
+    "id": "P0149",
+    "name": "Sensor de obstaculos",
+    "sku": "MOD-SE-OB",
+    "category": "Modulo",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/sen_obs.jfif",
+    "description": "Modulo para medir el color blanco y negro de un entorno.",
+    "active": true
+  },
+  {
+    "id": "P0150",
+    "name": "Modulo de carro 2",
+    "sku": "KIT-MC-02",
+    "category": "Kit",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/carr_01.jfif",
+    "description": "Kit de carro electronico para proyectos educativos.",
+    "active": true
+  },
+  {
+    "id": "P0151",
+    "name": "Bateria de litio de 3.7v 300mAh",
+    "sku": "BAT-LT-01",
+    "category": "Alimentacion",
+    "price": 0.80,
+    "stock": 10,
+    "image": "img/litio.jfif",
+    "description": "Alimentacion de litio para proyectos y para equipos.",
+    "active": true
+  },
+  {
+    "id": "PROJ-001",
+    "name": "Timbre Automatico",
+    "sku": "TIM-AUTO",
+    "category": "Proyectos",
+    "price": 120.00, 
+    "stock": 2,
+    "image": "img/TIMBRE.jfif", // Foto real estilo Instagram
+    "description": "Timbre programable para escuelas , colegios e indutrias.",
+    "active": true
+  },
+  {
+    "id": "PROJ-002",
+    "name": "Analizador Monofasico",
+    "sku": "ANAL-MONO",
+    "category": "Proyectos",
+    "price": 250.00,
+    "stock": 1,
+    "image": "img/MONOFASICO.jfif",
+    "description": "Equipo educativo para visualizacion de señales electricas.",
+    "active": true
+  },
+  {
+    "id": "PROJ-003",
+    "name": "Estaciones de energia",
+    "sku": "STAY-ENER",
+    "category": "Proyectos",
+    "price": 250.00,
+    "stock": 1,
+    "image": "img/PS.jfif",
+    "description": "Equipo para apagones.",
+    "active": true
   }
+
+
 ];
 
 // ==========================================
@@ -1612,7 +1823,7 @@ function crearTarjeta(producto) {
                 <h3>${producto.name}</h3>
                 <p class="desc">${producto.description}</p>
                 <div class="price-row">
-                    <span class="price">$${producto.price.toFixed(2)}</span>
+                    <span class="price" style="font-size: 1rem; color: #666;">Consultar</span>
                     <button class="add-btn" onclick="agregarAlCarrito('${producto.name}', ${producto.price}, '${producto.sku}')">
                         <i class="fa-solid fa-cart-plus"></i>
                     </button>
@@ -1648,6 +1859,65 @@ function cargarPagina() {
         const resultado = cat === 'todos' ? productosActivos : productosActivos.filter(p => p.category.toLowerCase() === cat.toLowerCase());
         if (gridTodos) gridTodos.innerHTML = resultado.map(p => crearTarjeta(p)).join('');
     }
+}
+// --- NUEVA FUNCIÓN ESPECIAL PARA TARJETAS DE PROYECTOS ---
+function crearTarjetaProyecto(producto) {
+    return `
+        <div class="project-card">
+            <img src="${producto.image}" alt="${producto.name}" class="project-img-full">
+            
+            <div class="project-overlay">
+                <h3>${producto.name}</h3>
+                <p>${producto.description}</p>
+                
+                <div style="display:flex; justify-content: center; align-items:center; margin-top: 15px;">
+                    
+                    <button class="project-btn" onclick="interesProyecto('${producto.name}')">
+                        ME INTERESA
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+}
+
+// --- ACTUALIZA TU FUNCIÓN CARGAR PAGINA ---
+function cargarPagina() {
+    const gridInicio = document.getElementById('grid-inicio');
+    const gridTodos = document.getElementById('grid-todos');
+    const gridKits = document.getElementById('grid-kits');
+    const gridRobotica = document.getElementById('grid-robotica');
+    
+    // NUEVO: Grid de Proyectos
+    const gridProyectos = document.getElementById('grid-proyectos');
+
+    const productosActivos = listaProductos.filter(p => p.active === true);
+
+    // ... (Tu código anterior para Inicio, Todos, Kits, Robotica sigue igual) ...
+    if (gridInicio) gridInicio.innerHTML = productosActivos.slice(0, 4).map(p => crearTarjeta(p)).join('');
+    if (gridTodos) gridTodos.innerHTML = productosActivos.map(p => crearTarjeta(p)).join('');
+    if (gridKits) {
+        const soloKits = productosActivos.filter(p => p.category === "Kits");
+        gridKits.innerHTML = soloKits.map(p => crearTarjeta(p)).join('');
+    }
+    if (gridRobotica) {
+        const soloRobots = productosActivos.filter(p => p.category === "Robotica");
+        gridRobotica.innerHTML = soloRobots.map(p => crearTarjeta(p)).join('');
+    }
+
+    // --- AQUÍ ESTÁ LA MAGIA NUEVA ---
+    if (gridProyectos) {
+        const soloProyectos = productosActivos.filter(p => p.category === "Proyectos");
+        // Usamos la función NUEVA "crearTarjetaProyecto" en lugar de la normal
+        gridProyectos.innerHTML = soloProyectos.map(p => crearTarjetaProyecto(p)).join('');
+    }
+}
+function interesProyecto(nombre) {
+    const telefono = "593994145131"; // El número que pediste
+    const mensaje = `Hola MKECUADOR, estoy viendo su página web y ME INTERESA el proyecto: ${nombre}. ¿Podrían darme más información?`;
+    
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
 }
 
 document.addEventListener('DOMContentLoaded', cargarPagina);

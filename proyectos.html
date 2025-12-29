@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos MKECUADOR</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="MKECUADOR Logo">
+            <span>MKECUADOR</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+            <li><a href="proyectos.html" class="active">Proyectos MK </a></li> </ul>
+        <div class="nav-icons">
+            <input type="text" id="input-busqueda-nav" placeholder="Buscar..." onkeyup="buscarDesdeNav(event)">
+            <i class="fa-solid fa-search" onclick="toggleBuscador()"></i>
+            <div class="cart-container" onclick="verCarrito()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="contador-carrito">0</span>
+            </div>
+            <i class="fa-solid fa-trash" onclick="vaciarCarrito()" style="cursor: pointer; margin-left: 15px; color: #e63946;"></i>
+        </div>
+    </nav>
+
+    <header style="background: #111; color: white; padding: 60px 10%; text-align: center; border-bottom: 4px solid var(--accent-yellow);">
+        <h1 style="font-size: 3rem;">Nuestros <span style="color: var(--accent-yellow);">Proyectos</span></h1>
+        <p style="font-size: 1.2rem; margin-top: 10px; color: #ccc;">Ingeniería aplicada y desarrollada por MKECUADOR.</p>
+    </header>
+
+    <section class="products">
+        <div class="projects-grid" id="grid-proyectos">
+            </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-bottom"><p>&copy; 2024 MKECUADOR.</p></div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
