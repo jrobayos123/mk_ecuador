@@ -1,0 +1,430 @@
+/* --- Variables y Configuración Global --- */
+:root {
+    --bg-main: #f0f2f5; /* Plomo claro (Fondo principal) */
+    --bg-secondary: #d9dce0; /* Plomo un poco más oscuro (Fondo hero/tarjetas) */
+    --accent-yellow: #ffd700; /* Amarillo de la imagen */
+    --accent-green: #2a9d8f; /* Verde de la imagen */
+    --accent-red: #e63946; /* Rojo de la imagen (acento) */
+    --text-main: #212529; /* Texto principal oscuro */
+    --text-muted: #6c757d; /* Texto secundario */
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .logo span {
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+ul { list-style: none; }
+
+/* --- Navegación --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #fff;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a:hover, .nav-links .active {
+    color: var(--accent-yellow);
+    text-decoration: underline;
+}
+
+.nav-icons i {
+    margin-left: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.nav-icons i:hover { color: var(--accent-yellow); }
+
+/* --- Hero Section --- */
+.hero {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    position: relative;
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-main) 100%);
+}
+
+.hero-content {
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin: 20px 0;
+    color: var(--text-main);
+}
+
+.hero h4 {
+    letter-spacing: 2px;
+    color: var(--accent-yellow);
+    font-weight: bold;
+}
+
+.hero p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.accent-yellow { color: var(--accent-yellow); }
+
+/* Botones */
+.hero-buttons { display: flex; gap: 20px; }
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--accent-yellow);
+    color: var(--text-main);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background: #e6c200;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid var(--accent-yellow);
+    color: var(--text-main);
+}
+
+.btn-secondary:hover {
+    background: var(--accent-yellow);
+    color: var(--text-main);
+}
+
+/* Elemento Visual Flotante */
+.hero-visual {
+    position: relative;
+}
+
+.floating-gear {
+    font-size: 15rem;
+    color: var(--accent-green);
+    animation: float 4s ease-in-out infinite;
+    opacity: 0.2;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* --- Categorías --- */
+.categories {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -50px;
+    padding: 0 5%;
+    position: relative;
+    z-index: 3;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    background: #fff;
+    padding: 30px;
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    border-bottom: 4px solid transparent;
+}
+
+.category-card i {
+    font-size: 2rem;
+    color: var(--accent-green);
+    margin-bottom: 15px;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-yellow);
+}
+
+/* --- Productos --- */
+.products {
+    padding: 80px 10%;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--text-main);
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--bg-main);
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+    overflow: hidden;
+    border: 1px solid transparent;
+}
+
+.product-card:hover {
+    border-color: var(--accent-yellow);
+    transform: translateY(-5px);
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.badge-new { background: var(--accent-green); }
+.badge-sale { background: var(--accent-red); }
+
+.product-img {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: var(--text-muted);
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.product-card:hover .product-img {
+    color: var(--accent-yellow);
+    transform: scale(1.05);
+}
+
+.product-info h3 { font-size: 1.2rem; margin-bottom: 5px; color: var(--text-main); }
+.product-info .desc { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 15px; }
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+.add-btn {
+    background: var(--accent-yellow);
+    border: none;
+    color: var(--text-main);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.add-btn:hover {
+    background: var(--accent-green);
+    color: #fff;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: var(--bg-secondary);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; height: auto; padding: 100px 5%; }
+    .hero-content { margin-bottom: 50px; }
+    .hero h1 { font-size: 2.5rem; }
+    .categories { margin-top: 30px; }
+    .nav-links { display: none; } 
+
+
+}
+
+/* Estilos para los filtros */
+.filter-btn {
+    padding: 8px 16px;
+    margin: 5px;
+    border: 1px solid var(--accent-yellow);
+    background: transparent;
+    color: var(--text-main);
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: var(--accent-yellow);
+    color: #fff;
+}
+/* --- Agrega esto al final de tu style.css --- */
+
+.filter-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 0 5%;
+}
+
+.category-buttons {
+    display: flex;
+    overflow-x: auto; /* Permite deslizar si no caben */
+    gap: 10px;
+    padding-bottom: 10px;
+    white-space: nowrap; /* Evita que los botones se vayan a otra linea */
+    
+    /* Ocultar barra de scroll fea en Chrome/Safari */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+.category-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-btn {
+    flex: 0 0 auto; /* No permite que los botones se aplasten */
+}
+/* --- Agrega esto AL FINAL de tu style.css para arreglar las imágenes gigantes --- */
+
+.product-img {
+    /* Asegura que la imagen no se salga del contenedor redondeado */
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    /* Esta es la MAGIA: hace que la imagen quepa sin deformarse */
+    object-fit: contain; 
+    /* Un pequeño truco para que las imágenes con fondo blanco se vean mejor */
+    mix-blend-mode: multiply;
+}
+/* --- ESTILOS PARA LA LUPA Y CARRITO --- */
+
+/* Contenedor del buscador en el menú */
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+/* El campo de texto de búsqueda (Oculto por defecto) */
+#input-busqueda-nav {
+    display: none; /* Se oculta */
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid var(--accent-yellow);
+    background: #fff;
+    width: 200px;
+    transition: 0.3s;
+}
+
+#input-busqueda-nav.activo {
+    display: block; /* Aparece cuando le damos clic a la lupa */
+    animation: fadeIn 0.3s ease;
+}
+
+/* Contenedor del carrito con contador */
+.cart-container {
+    position: relative;
+    cursor: pointer;
+}
+
+/* El círculo rojo con el número */
+#contador-carrito {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #e63946; /* Rojo */
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(10px); }
+    to { opacity: 1; transform: translateX(0); }
+}

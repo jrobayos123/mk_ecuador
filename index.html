@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MKECUADOR | Componentes Electrónicos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="MKECUADOR Robot Logo">
+            <span>MKECUADOR</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+
+        </ul>
+        <div class="nav-icons">
+            <input type="text" id="input-busqueda-nav" placeholder="Buscar..." onkeyup="buscarDesdeNav(event)">
+            
+            <i class="fa-solid fa-search" onclick="toggleBuscador()" title="Buscar"></i>
+            
+            <div class="cart-container" onclick="verCarrito()" title="Ver mi pedido">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="contador-carrito">0</span>
+            </div>
+
+            <i class="fa-solid fa-trash" onclick="vaciarCarrito()" style="cursor: pointer; margin-left: 15px; color: #e63946;" title="Vaciar Carrito"></i>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h4><span class="accent-yellow">INNOVACIÓN</span> EN ELECTRÓNICA</h4>
+            <h1>Construye tu<br> Futuro con Nosotros</h1>
+            <p>Encuentra todo lo que necesitas para tus proyectos de ingeniería y robótica. Calidad garantizada.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Ver Catálogo</a>
+                <a href="#" class="btn btn-secondary">Proyectos</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-gear">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="categories">
+        <div class="category-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Potencia</h3>
+            <p>Fuentes y Baterías</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-robot"></i>
+            <h3>Robótica</h3>
+            <p>Motores y Servos</p>
+        </div>
+        <div class="category-card">
+            <i class="fa-solid fa-wifi"></i>
+            <h3>IoT</h3>
+            <p>Módulos WiFi</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <h2 class="section-title">Nuevos <span class="accent-yellow">Ingresos</span></h2>
+        
+        <div class="product-grid" id="grid-inicio">
+            <div class="product-card">
+                <div class="badge badge-new">NUEVO</div>
+                <div class="product-img">
+                    <i class="fa-solid fa-hard-drive"></i>
+                </div>
+                <div class="product-info">
+                    <h3>ESP32 Dev Module</h3>
+                    <p class="desc">WiFi + Bluetooth Dual Core</p>
+                    <div class="price-row">
+                        <span class="price">$8.50</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-img">
+                    <i class="fa-brands fa-raspberry-pi"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Raspberry Pi 5</h3>
+                    <p class="desc">8GB RAM - 2.4GHz Quad</p>
+                    <div class="price-row">
+                        <span class="price">$85.00</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="badge badge-sale">OFERTA</div>
+                <div class="product-img">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+                <div class="product-info">
+                    <h3>Sensor LiDAR</h3>
+                    <p class="desc">Módulo de distancia</p>
+                    <div class="price-row">
+                        <span class="price">$15.20</span>
+                        <button class="add-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MKECUADOR. Especialistas en Electrónica y Robótica.</p>
+    </footer>
+    <script src="script.js"></script>
+    s
+
+</body>
+</html>
