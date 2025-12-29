@@ -1681,7 +1681,7 @@ const listaProductos = [
     "category": "Proyectos",
     "price": 250.00,
     "stock": 1,
-    "image": "img/MONOFASICO.jfif",
+    "image": "img/md1.jfif",
     "description": "Equipo educativo para visualizacion de señales electricas.",
     "active": true
   },
