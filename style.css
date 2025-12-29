@@ -579,3 +579,8 @@ footer {
 .project-btn:hover {
     background: white;
 }
+
+.icon-email {
+    color: #FFD700; /* Amarillo dorado (combina con tu marca) */
+    margin-right: 8px;
+}
